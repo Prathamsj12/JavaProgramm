@@ -1,13 +1,16 @@
-class A{
-public static void main(String [] args){
-for(int i=5; i>=1; i--){
-  for(int j=i;j<5;j++){
-System.out.print(" ");
-  }
-for(int j=i; j>=1; j--){
-System.out.print((char)(j+64));
-}
+class Big_Star1{
+public static void main(String[] args){
+   int n=5;
+for(int i=1;i<=(n*2)-1;i++){
+   if(i<=n)
+     for(int j=i;j>=1;j--)
+     System.out.print((char)(i+64));
+   else
+     for(int j=i;j<=(n*2)-1;j++)
+    System.out.print("*");
+       
 System.out.println();
+     }
+   }
 }
- }
-}
+
